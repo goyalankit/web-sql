@@ -1,16 +1,34 @@
 """`main` is the top level module for your Flask application."""
 
 # Import the Flask Framework
-from flask import Flask
+from flask import Flask, request, render_template
+from Webpage import Webpage
+from flask_bootstrap import Bootstrap
+
 app = Flask(__name__)
+Bootstrap(app)
+
 # Note: We don't need to call run() since our application is embedded within
 # the App Engine WSGI application server.
+
+
+
 
 
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'Hello World!'
+    return render_template('home.html')
+
+
+@app.route('/url')
+def url_handler():
+    if request.args.get('url') is not None:
+        w = Webpage(request.args.get('url'))
+        w.store_content(w.get_content())
+        return w.retreive_content()
+    else:
+        return "url parameter not given."
 
 
 @app.errorhandler(404)
@@ -23,3 +41,7 @@ def page_not_found(e):
 def page_not_found(e):
     """Return a custom 500 error."""
     return 'Sorry, unexpected error: {}'.format(e), 500
+
+
+if __name__ == "__main__":
+    app.run()
