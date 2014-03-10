@@ -5,6 +5,7 @@ from flask import Flask, request, render_template
 from Webpage import Webpage
 from flask_bootstrap import Bootstrap
 from queryForm import QueryForm
+from SqlParser import SQLParser
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -38,6 +39,37 @@ def url_handler():
         return "url parameter not given."
 
 
+
+
+
+@app.route('/query')
+def query():
+    if request.args.get('query') is not None:
+
+        sql_parser = SQLParser(request.args.get('query'))
+        stmt = sql_parser.parse()
+
+        " Only valid query is SELECT query "
+        if stmt is None:
+            return "Invalid Query"
+
+        table_name = sql_parser.understand()
+        if table_name is not None:
+            Webpage.get_star(table_name)
+
+        return "cool"
+    else:
+        return "query not present"
+
+
+
+##
+##
+##
+## Error handling dumb methods
+##
+##
+##
 
 #
 # Error Handler. Custom 404 page

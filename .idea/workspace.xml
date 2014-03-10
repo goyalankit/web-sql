@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edb432d9-4fc2-48e1-98f9-1e413bd8c333" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SqlParser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queryForm.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/sample.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/url_result.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SqlParser.py" afterPath="$PROJECT_DIR$/SqlParser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Webpage.py" afterPath="$PROJECT_DIR$/Webpage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <ignored path="websql.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Webpage.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Webpage.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Webpage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="28" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+            <state line="40" column="34" selection-start="868" selection-end="868" vertical-scroll-proportion="0.7807933" vertical-offset="226" max-vertical-offset="705">
               <folding>
                 <element signature="e#22#46#0" expanded="true" />
               </folding>
@@ -53,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlParser.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SqlParser.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SqlParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.04054054" vertical-offset="0" max-vertical-offset="740">
+            <state line="4" column="6" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -65,7 +60,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="1020">
+            <state line="57" column="15" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1500">
               <folding>
                 <element signature="e#95#144#0" expanded="true" />
               </folding>
@@ -152,9 +147,9 @@
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/queryForm.py" />
         <option value="$PROJECT_DIR$/templates/url_result.html" />
+        <option value="$PROJECT_DIR$/SqlParser.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Webpage.py" />
-        <option value="$PROJECT_DIR$/SqlParser.py" />
       </list>
     </option>
   </component>
@@ -235,6 +230,7 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/environments" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistory" value="(s" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -426,7 +422,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="29" width="1400" height="860" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -437,7 +433,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39949432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996207" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32996207" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -566,9 +562,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SqlParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="1020">
+        <state line="57" column="15" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1500">
           <folding>
             <element signature="e#95#144#0" expanded="true" />
           </folding>
@@ -577,17 +580,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Webpage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+        <state line="40" column="34" selection-start="868" selection-end="868" vertical-scroll-proportion="0.7807933" vertical-offset="226" max-vertical-offset="705">
           <folding>
             <element signature="e#22#46#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SqlParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.04054054" vertical-offset="0" max-vertical-offset="740">
-          <folding />
         </state>
       </provider>
     </entry>

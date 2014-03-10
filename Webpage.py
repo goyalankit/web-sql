@@ -35,3 +35,8 @@ class Webpage(object):
             str += tag + "\n"
 
         return str
+
+    def get_star(self, table_name):
+        parsed_html = BeautifulSoup(redis.hget(self.url, "raw"))
+        for tag in parsed_html.findAll(table_name):
+            print tag
