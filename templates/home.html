@@ -1,14 +1,15 @@
-<!doctype html>
-<title>Flaskr</title>
-<!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">-->
-<div class=page>
-      <h1>Flaskr</h1>
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "bootstrap/fixes.html" as fixes %}
 
-    <form method="get" >
-        <input type="text"/>
-
-
-
-    </form>
-
+{% block content %}
+<div class="container">
+  <h2>And as a horizontal form</h2>
+  {{ wtf.quick_form(form, form_type='horizontal', action="/url", button_map={'submit_button': 'primary'})}}
 </div>
+{% endblock %}
+
+{% block head %}
+{{super()}}
+{{fixes.ie8()}}
+{% endblock %}

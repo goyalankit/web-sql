@@ -3,6 +3,8 @@ __author__ = 'ankit'
 from requests import get
 from redis import Redis
 from BeautifulSoup import BeautifulSoup
+from sets import Set
+
 redis = Redis()
 
 class Webpage(object):
@@ -19,4 +21,17 @@ class Webpage(object):
 
     def retreive_content(self):
         parsed_html = BeautifulSoup(redis.hget(self.url, "raw"))
-        return parsed_html.findAll('a')[0].get('href')
+
+        tags = Set()
+
+        for tag in parsed_html.findAll(True):
+            tags.add(tag.name)
+
+        str = ""
+
+        tags = sorted(tags)
+
+        for tag in tags:
+            str += tag + "\n"
+
+        return str

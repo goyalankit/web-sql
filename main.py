@@ -4,31 +4,44 @@
 from flask import Flask, request, render_template
 from Webpage import Webpage
 from flask_bootstrap import Bootstrap
+from queryForm import QueryForm
 
 app = Flask(__name__)
 Bootstrap(app)
 
-# Note: We don't need to call run() since our application is embedded within
-# the App Engine WSGI application server.
 
 
-
+#
+# Home page.
+#
 
 
 @app.route('/')
-def hello():
-    """Return a friendly HTTP greeting."""
-    return render_template('home.html')
+def home():
+    form = QueryForm()
+    return render_template('home.html', form=form)
 
 
-@app.route('/url')
+
+#
+# url handler. Fetch the page and store it in redis.
+#
+
+@app.route('/url', methods=['POST'])
 def url_handler():
-    if request.args.get('url') is not None:
-        w = Webpage(request.args.get('url'))
+    if request.form['url'] is not None:
+        w = Webpage(request.form['url'])
         w.store_content(w.get_content())
         return w.retreive_content()
+        #return render_template('url_result.html')
     else:
         return "url parameter not given."
+
+
+
+#
+# Error Handler. Custom 404 page
+#
 
 
 @app.errorhandler(404)
@@ -44,4 +57,7 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
+    app.config['SECRET_KEY'] = 'devkey'
+    app.config['RECAPTCHA_PUBLIC_KEY'] = \
+        '6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw'
     app.run()
